@@ -4,12 +4,12 @@ const toggleIcon = themeToggle.querySelector(".toggle-icon");
 
 function setTheme(theme) {
   document.documentElement.setAttribute("data-theme", theme);
-  toggleIcon.textContent = theme === "light" ? "☀️" : "🌙";
+  toggleIcon.textContent = theme === "dark" ? "☀️" : "🌙";
   localStorage.setItem("theme", theme);
 }
 
-// Load saved theme or default to dark
-const savedTheme = localStorage.getItem("theme") || "dark";
+// Load saved theme or default to light
+const savedTheme = localStorage.getItem("theme") || "light";
 setTheme(savedTheme);
 
 themeToggle.addEventListener("click", () => {
