@@ -1,6 +1,78 @@
+/* === SAMSUNG FONTS === */
+
+/* Samsung Sharp Sans — Display / Headings */
+@font-face {
+  font-family: "Samsung Sharp Sans";
+  src: url("fonts/samsungsharpsans.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Samsung Sharp Sans";
+  src: url("fonts/samsungsharpsans-medium.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Samsung Sharp Sans";
+  src: url("fonts/samsungsharpsans-bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* SamsungOneUI — Body / UI text */
+@font-face {
+  font-family: "SamsungOneUI";
+  src: url("fonts/SamsungOneUI-200_v2.0.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "SamsungOneUI";
+  src: url("fonts/SamsungOneUI-300_v2.0.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "SamsungOneUI";
+  src: url("fonts/SamsungOneUI-400_v2.5.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "SamsungOneUI";
+  src: url("fonts/SamsungOneUI-500_v2.1.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "SamsungOneUI";
+  src: url("fonts/SamsungOneUI-600_v2.1.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "SamsungOneUI";
+  src: url("fonts/SamsungOneUI-700_v2.2.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
 /* === THEME VARIABLES === */
 :root {
   /* Dark theme (default) */
+  --font-body: "SamsungOneUI", -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-display: "Samsung Sharp Sans", "SamsungOneUI", sans-serif;
+
   --bg-primary: #0a0a0f;
   --bg-secondary: rgba(255, 255, 255, 0.02);
   --bg-card: rgba(255, 255, 255, 0.03);
@@ -68,11 +140,7 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  font-family:
-    "Inter",
-    -apple-system,
-    BlinkMacSystemFont,
-    sans-serif;
+  font-family: var(--font-body);
   background: var(--bg-primary);
   color: var(--text-secondary);
   line-height: 1.6;
@@ -150,6 +218,7 @@ a {
 }
 .logo-text strong {
   display: block;
+  font-family: var(--font-display);
   font-size: 1rem;
   color: var(--text-primary);
   transition: color 0.4s;
@@ -330,8 +399,9 @@ a {
   }
 }
 .hero h1 {
+  font-family: var(--font-display);
   font-size: clamp(2.2rem, 5vw, 3.8rem);
-  font-weight: 900;
+  font-weight: 700;
   line-height: 1.1;
   margin-bottom: 20px;
   color: var(--text-primary);
@@ -492,8 +562,9 @@ a {
   color: #2962ff;
 }
 .section-header h2 {
+  font-family: var(--font-display);
   font-size: clamp(1.8rem, 3vw, 2.5rem);
-  font-weight: 800;
+  font-weight: 700;
   color: var(--text-primary);
   margin-bottom: 12px;
   transition: color 0.4s;
@@ -586,8 +657,9 @@ a {
   color: #2962ff;
 }
 .product-title {
+  font-family: var(--font-display);
   font-size: 1.2rem;
-  font-weight: 800;
+  font-weight: 700;
   color: var(--text-primary);
   margin-bottom: 8px;
   transition: color 0.4s;
@@ -724,8 +796,9 @@ a {
   display: block;
 }
 .about-content h2 {
+  font-family: var(--font-display);
   font-size: clamp(1.8rem, 3vw, 2.4rem);
-  font-weight: 800;
+  font-weight: 700;
   color: var(--text-primary);
   margin-bottom: 20px;
   transition: color 0.4s;
