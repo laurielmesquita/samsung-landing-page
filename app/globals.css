@@ -1,0 +1,4 @@
+@import "tailwindcss";
+@import "./legacy.css";
+
+/* Base overrides via legacy avoid tailwind resets wiping out elements completely */

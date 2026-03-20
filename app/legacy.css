@@ -3,21 +3,21 @@
 /* Samsung Sharp Sans — Display / Headings */
 @font-face {
   font-family: "Samsung Sharp Sans";
-  src: url("fonts/samsungsharpsans.otf") format("opentype");
+  src: url("/fonts/samsungsharpsans.otf") format("opentype");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Samsung Sharp Sans";
-  src: url("fonts/samsungsharpsans-medium.otf") format("opentype");
+  src: url("/fonts/samsungsharpsans-medium.otf") format("opentype");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Samsung Sharp Sans";
-  src: url("fonts/samsungsharpsans-bold.otf") format("opentype");
+  src: url("/fonts/samsungsharpsans-bold.otf") format("opentype");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -26,42 +26,42 @@
 /* SamsungOneUI — Body / UI text */
 @font-face {
   font-family: "SamsungOneUI";
-  src: url("fonts/SamsungOneUI-200_v2.0.ttf") format("truetype");
+  src: url("/fonts/SamsungOneUI-200_v2.0.ttf") format("truetype");
   font-weight: 200;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "SamsungOneUI";
-  src: url("fonts/SamsungOneUI-300_v2.0.ttf") format("truetype");
+  src: url("/fonts/SamsungOneUI-300_v2.0.ttf") format("truetype");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "SamsungOneUI";
-  src: url("fonts/SamsungOneUI-400_v2.5.ttf") format("truetype");
+  src: url("/fonts/SamsungOneUI-400_v2.5.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "SamsungOneUI";
-  src: url("fonts/SamsungOneUI-500_v2.1.ttf") format("truetype");
+  src: url("/fonts/SamsungOneUI-500_v2.1.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "SamsungOneUI";
-  src: url("fonts/SamsungOneUI-600_v2.1.ttf") format("truetype");
+  src: url("/fonts/SamsungOneUI-600_v2.1.ttf") format("truetype");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "SamsungOneUI";
-  src: url("fonts/SamsungOneUI-700_v2.2.ttf") format("truetype");
+  src: url("/fonts/SamsungOneUI-700_v2.2.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -69,40 +69,8 @@
 
 /* === THEME VARIABLES === */
 :root {
-  /* Dark theme (default) */
   --font-body: "SamsungOneUI", -apple-system, BlinkMacSystemFont, sans-serif;
   --font-display: "Samsung Sharp Sans", "SamsungOneUI", sans-serif;
-
-  --bg-primary: #0a0a0f;
-  --bg-secondary: rgba(255, 255, 255, 0.02);
-  --bg-card: rgba(255, 255, 255, 0.03);
-  --bg-card-hover: rgba(255, 255, 255, 0.05);
-  --bg-header: rgba(10, 10, 15, 0.9);
-  --bg-product-image: linear-gradient(
-    180deg,
-    rgba(20, 20, 30, 1) 0%,
-    rgba(15, 15, 22, 1) 100%
-  );
-  --border-color: rgba(255, 255, 255, 0.06);
-  --border-hover: rgba(41, 98, 255, 0.2);
-  --text-primary: #fff;
-  --text-secondary: #e0e0e8;
-  --text-muted: #888;
-  --text-muted-light: #aaa;
-  --text-muted-dark: #666;
-  --text-strong: #ddd;
-  --text-feature: #bbb;
-  --text-footer: #444;
-  --card-shadow:
-    0 20px 60px rgba(0, 0, 0, 0.4), 0 0 40px rgba(41, 98, 255, 0.08);
-  --seal-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-  --step-arrow: #333;
-  --trust-stat-bg: rgba(255, 255, 255, 0.03);
-  --products-cta-bg: rgba(41, 98, 255, 0.05);
-  --products-cta-border: rgba(41, 98, 255, 0.15);
-}
-
-[data-theme="light"] {
   --bg-primary: #f5f7fb;
   --bg-secondary: rgba(0, 0, 0, 0.02);
   --bg-card: #fff;
@@ -119,8 +87,7 @@
   --text-strong: #111827;
   --text-feature: #374151;
   --text-footer: #9ca3af;
-  --card-shadow:
-    0 20px 60px rgba(0, 0, 0, 0.08), 0 0 40px rgba(41, 98, 255, 0.04);
+  --card-shadow: 0 20px 60px rgba(0, 0, 0, 0.08), 0 0 40px rgba(41, 98, 255, 0.04);
   --seal-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
   --step-arrow: #d1d5db;
   --trust-stat-bg: rgba(0, 0, 0, 0.03);
@@ -244,30 +211,6 @@ a {
   color: var(--text-primary);
 }
 
-/* Theme Toggle */
-.theme-toggle {
-  background: var(--bg-card);
-  border: 1px solid var(--border-color);
-  border-radius: 50px;
-  padding: 6px 14px;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  font-size: 0.8rem;
-  font-weight: 500;
-  color: var(--text-muted-light);
-  transition: all 0.3s;
-}
-.theme-toggle:hover {
-  border-color: var(--border-hover);
-  color: var(--text-primary);
-}
-.theme-toggle .toggle-icon {
-  font-size: 1rem;
-  line-height: 1;
-}
-
 .btn-header {
   display: inline-flex;
   align-items: center;
@@ -356,7 +299,7 @@ a {
       transparent 50%
     );
 }
-[data-theme="light"] .hero-bg {
+.hero-bg {
   background:
     radial-gradient(
       ellipse at 50% 0%,
@@ -385,7 +328,7 @@ a {
   margin-bottom: 24px;
   animation: pulse-badge 3s ease-in-out infinite;
 }
-[data-theme="light"] .hero-badge {
+.hero-badge {
   background: rgba(41, 98, 255, 0.08);
   color: #2962ff;
 }
@@ -413,7 +356,7 @@ a {
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
-[data-theme="light"] .gradient-text {
+.gradient-text {
   background: linear-gradient(135deg, #1428a0, #0d9f50);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -470,7 +413,7 @@ a {
     transform 0.3s,
     box-shadow 0.3s;
 }
-[data-theme="light"] .samsung-seal {
+.samsung-seal {
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
   border: 1px solid rgba(0, 0, 0, 0.06);
 }
@@ -492,7 +435,7 @@ a {
   background: #fff;
   border-radius: 10px;
 }
-[data-theme="light"] .samsung-seal-small {
+.samsung-seal-small {
   border: 1px solid rgba(0, 0, 0, 0.06);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
 }
@@ -525,7 +468,7 @@ a {
   transform: translateY(-4px);
   border-color: var(--border-hover);
 }
-[data-theme="light"] .benefit-card {
+.benefit-card {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
 }
 .benefit-icon {
@@ -558,7 +501,7 @@ a {
   color: #6d8fff;
   margin-bottom: 12px;
 }
-[data-theme="light"] .section-tag {
+.section-tag {
   color: #2962ff;
 }
 .section-header h2 {
@@ -600,7 +543,7 @@ a {
   border-color: var(--border-hover);
   box-shadow: var(--card-shadow);
 }
-[data-theme="light"] .product-card {
+.product-card {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
 }
 .product-badge {
@@ -653,7 +596,7 @@ a {
   margin-bottom: 8px;
   display: block;
 }
-[data-theme="light"] .product-category {
+.product-category {
   color: #2962ff;
 }
 .product-title {
@@ -690,7 +633,7 @@ a {
   font-weight: 700;
   color: #25d366;
 }
-[data-theme="light"] .price-discount {
+.price-discount {
   color: #0d9f50;
 }
 .products-cta {
@@ -745,7 +688,7 @@ a {
   background: var(--bg-card-hover);
   transform: translateY(-4px);
 }
-[data-theme="light"] .step-card {
+.step-card {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
 }
 .step-number {
@@ -838,7 +781,7 @@ a {
     background 0.4s,
     border-color 0.4s;
 }
-[data-theme="light"] .trust-card {
+.trust-card {
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
 }
 .trust-card-header {
@@ -873,7 +816,7 @@ a {
   color: #6d8fff;
   font-weight: 500;
 }
-[data-theme="light"] .trust-card-header span {
+.trust-card-header span {
   color: #2962ff;
 }
 .trust-stats {
@@ -926,7 +869,7 @@ a {
   border-color: var(--border-hover);
   background: var(--bg-card-hover);
 }
-[data-theme="light"] .faq-item {
+.faq-item {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
 }
 .faq-item h3 {
@@ -985,8 +928,8 @@ a {
 .footer-contact a:hover {
   color: #6d8fff;
 }
-[data-theme="light"] .footer-links a:hover,
-[data-theme="light"] .footer-contact a:hover {
+.footer-links a:hover,
+.footer-contact a:hover {
   color: #2962ff;
 }
 .footer-bottom {
@@ -1127,12 +1070,7 @@ a {
     padding: 8px 16px;
     font-size: 0.8rem;
   }
-  .theme-toggle span:not(.toggle-icon) {
-    display: none;
-  }
-  .theme-toggle {
-    padding: 8px 10px;
-  }
+
   .hero {
     padding: 60px 0 50px;
   }
